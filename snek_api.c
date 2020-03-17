@@ -10,6 +10,8 @@ int MOOGLE_FLAG = 0;
 int MOOGLES_EATEN = 0;
 int TIME_OUT = ((BOARD_SIZE * 4) - 4) * CYCLE_ALLOWANCE;
 
+#define V BOARD_SIZE
+
 GameBoard* init_board(){
 	srand(time(0));
 	GameBoard* gameBoard = (GameBoard*)(malloc(sizeof(GameBoard)));
