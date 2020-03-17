@@ -56,9 +56,38 @@ void play_game() {
 	}
 	end_game(&board);
 
-}
 
-int main(){
+
+/*int main(){
 	play_game();
 	return 0;
 }
+*/
+   bool graph1[V][V] = {{0, 1, 0, 1, 0}, 
+                      {1, 0, 1, 1, 1}, 
+                      {0, 1, 0, 0, 1}, 
+                      {1, 1, 0, 0, 1}, 
+                      {0, 1, 1, 1, 0}, 
+                     }; 
+  
+    // Print the solution 
+    hamCycle(graph1); 
+  
+   /* Let us create the following graph 
+      (0)--(1)--(2) 
+       |   / \   | 
+       |  /   \  | 
+       | /     \ | 
+      (3)       (4)    */
+    bool graph2[V][V] = {{0, 1, 0, 1, 0}, 
+                      {1, 0, 1, 1, 1}, 
+                      {0, 1, 0, 0, 1}, 
+                      {1, 1, 0, 0, 0}, 
+                      {0, 1, 1, 0, 0}, 
+                     }; 
+  
+    // Print the solution 
+    hamCycle(graph2); 
+  
+    return 0; 
+} 
